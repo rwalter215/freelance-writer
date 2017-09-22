@@ -1,7 +1,7 @@
 .circular--portrait {
   position: relative;
-  width: 200px;
-  height: 200px;
+  width: 400px;
+  height: 400px;
   overflow: hidden;
   border-radius: 50%;
 }
@@ -13,4 +13,12 @@
 
 .intro__description {
   display: inline;
+}
+
+.intro__divider {
+
+}
+
+.intro__header {
+  font-size: 80px;
 }

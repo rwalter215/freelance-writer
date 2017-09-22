@@ -10,11 +10,14 @@ class Intro extends Component {
   render() {
     return (
       <div style={style}>
+      <h1 className='intro__header'>Carla Cino</h1>
         <img src='http://engineering.unl.edu/images/staff/Kayla_Person-small.jpg' className="circular--portrait"/>
-        <div className='intro__description'>
-          <h3>Writer</h3>
-          <h3>French</h3>
-          <h3>Go Away</h3>
+        <div>
+          <h3 className='intro__description'>Writer</h3>
+            <div className='intro__description intro__divider'> . </div>
+          <h3 className='intro__description'>French</h3>
+            <div className='intro__description intro__divider'> . </div>
+          <h3 className='intro__description'>Go Away</h3>
         </div>
       </div>
     );
