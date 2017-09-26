@@ -12,13 +12,18 @@
 }
 
 .intro__description {
+  font-family: 'Cinzel', serif;
+  font-size: 50px;
   display: inline;
 }
 
 .intro__divider {
-
+  font-family: 'Cinzel', serif;
+  font-size: 60px;
 }
 
 .intro__header {
+  font-family: 'Cinzel', serif;
   font-size: 80px;
+  margin: 0 auto;
 }
