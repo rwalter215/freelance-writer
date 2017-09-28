@@ -5,6 +5,7 @@ import Intro from '../../components/Intro/Intro.js'
 import Portfolio from '../Portfolio/Portfolio.js'
 import Contact from '../Contact/Contact.js'
 import Bio from '../../components/Bio/Bio.js'
+import Footer from '../../components/Footer/Footer.js'
 
 export default class Navigation extends Component {
   state = {}
@@ -37,13 +38,14 @@ export default class Navigation extends Component {
             <Link to="/contact"><Menu.Item name='contact' active={activeItem === 'contact'} onClick={this.handleItemClick}>
               Contact
             </Menu.Item></Link>
-
           </Menu>
 
           <Route exact path="/" component={Intro}/>
           <Route path="/portfolio" component={Portfolio}/>
           <Route path="/bio" component={Bio}/>
           <Route path="/contact" component={Contact}/>
+
+          <Footer />
         </div>
       </Router>
     )

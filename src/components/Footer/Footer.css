@@ -1,0 +1,15 @@
+.fa {
+  padding: 10px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+  color: black;
+  background-color: #2bca9e;
+  margin-right: 10px;
+}
+
+.footer {
+  margin-top: 200px;
+}

@@ -27,3 +27,9 @@
   font-size: 80px;
   margin: 0 auto;
 }
+
+.intro__sub-description {
+  font-family: 'Cinzel', serif;
+  font-size: 30px;
+  display: inline;
+}

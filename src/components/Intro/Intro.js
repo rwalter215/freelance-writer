@@ -6,7 +6,6 @@ class Intro extends Component {
   constructor(props) {
     super(props)
 
-    this.pic = '../../../public/test.jpg'
   }
   render() {
     return (
@@ -24,13 +23,27 @@ class Intro extends Component {
           <div>
             <h3 className='intro__description'>Journalist</h3>
             <div className='intro__description intro__divider'>
-               |
+               &nbsp;|&nbsp;
             </div>
             <h3 className='intro__description'>Copywriter</h3>
             <div className='intro__description intro__divider'>
-               |
+               &nbsp;|&nbsp;
             </div>
             <h3 className='intro__description'>Writer</h3>
+          </div>
+        </Grid.Row>
+
+        <Grid.Row centered columns={2}>
+          <div>
+            <h5 className='intro__sub-description'>Lifestyle</h5>
+            <div className='intro__sub-description'>
+              &nbsp;&diams;&nbsp;
+            </div>
+            <h5 className='intro__sub-description'>Entertainment</h5>
+            <div className='intro__sub-description'>
+              &nbsp;&diams;&nbsp;
+            </div>
+            <h5 className='intro__sub-description'>Travel</h5>
           </div>
         </Grid.Row>
 
