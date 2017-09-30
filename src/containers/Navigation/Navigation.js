@@ -6,6 +6,7 @@ import Portfolio from '../Portfolio/Portfolio.js'
 import Contact from '../Contact/Contact.js'
 import Bio from '../../components/Bio/Bio.js'
 import Footer from '../../components/Footer/Footer.js'
+import style from './Navigation.css'
 
 export default class Navigation extends Component {
   state = {}
@@ -18,7 +19,7 @@ export default class Navigation extends Component {
     return (
       <Router>
         <div>
-          <Menu stackable>
+          <Menu className='nav1' size='massive' inverted stackable>
             <Menu.Item>
               <img src='/logo.png'/>
             </Menu.Item>
