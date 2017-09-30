@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
+import logo from './icon.png';
 import Intro from './components/Intro/Intro.js'
 import Navigation from './containers/Navigation/Navigation.js'
 import './App.css';
@@ -7,7 +7,7 @@ import './App.css';
 class App extends Component {
   render() {
     return (
-      <Navigation />
+      <Navigation icon={logo}/>
     );
   }
 }
