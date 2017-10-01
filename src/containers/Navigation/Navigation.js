@@ -19,7 +19,7 @@ export default class Navigation extends Component {
     return (
       <Router>
         <div>
-          <Menu className='nav1' size='massive' inverted stackable>
+          <Menu className='nav1' size='massive' stackable>
             <Menu.Item>
               <img className='logo' src={this.props.icon}/>
             </Menu.Item>
