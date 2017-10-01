@@ -27,7 +27,7 @@ export default class Contact extends Component {
                   <Form.Input label='Subject' placeholder='Subject' />
                 </Form.Group>
                 <TextArea autoHeight placeholder='What can I do for you?' style={{ minHeight: 100 }} />
-                <Button type='submit'>Submit</Button>
+                <Button className='button--submit' type='submit'>Submit</Button>
               </Form>
             </Segment>
           </Grid.Column>
