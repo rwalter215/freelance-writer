@@ -24,8 +24,9 @@ export default class Contact extends Component {
               <Form inverted>
                 <Form.Group widths='equal'>
                   <Form.Input label='Name' placeholder='Name' />
-                  <Form.Input label='Subject' placeholder='Subject' />
+                  <Form.Input label='Email' placeholder='Email' />
                 </Form.Group>
+                <Form.Input label='Subject' placeholder='Subject' />
                 <TextArea autoHeight placeholder='What can I do for you?' style={{ minHeight: 100 }} />
                 <Button className='button--submit' type='submit'>Submit</Button>
               </Form>
