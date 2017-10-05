@@ -11,12 +11,6 @@
   height: auto;
 }
 
-.intro__description {
-  font-family: 'Cinzel', serif;
-  font-size: 50px;
-  display: inline;
-}
-
 .intro__divider {
   font-family: 'Cinzel', serif;
   font-size: 60px;

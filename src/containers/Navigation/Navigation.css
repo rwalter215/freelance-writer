@@ -1,7 +1,14 @@
-.nav1 {
-  background-color: #2bca9e !important;
-}
-
 .ui.menu {
   margin-bottom: 4rem !important;
+}
+
+#clue {
+  background: no-repeat center/100% url("background1.jpeg");
+  height: 100vh;
+}
+
+.nav1 {
+  font-size: 2rem !important;
+  padding-left: 2rem;
+  padding-top: 2rem;
 }

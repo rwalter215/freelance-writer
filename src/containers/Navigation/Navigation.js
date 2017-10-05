@@ -1,6 +1,6 @@
 import React, {Component} from 'react'
 import {BrowserRouter as Router, Route, Link} from 'react-router-dom'
-import {List, Menu} from 'semantic-ui-react'
+import {List, Menu, Grid} from 'semantic-ui-react'
 import Intro from '../../components/Intro/Intro.js'
 import Portfolio from '../Portfolio/Portfolio.js'
 import Contact from '../Contact/Contact.js'
@@ -17,22 +17,28 @@ export default class Navigation extends Component {
     const {activeItem} = this.state
 
     return (
-      <Router>
-        <div>
-          <Menu text vertical>
-            <Link to='/'><Menu.Item name='closest' active={activeItem === 'closest'} onClick={this.handleItemClick} /></Link>
-            <Link to='/portfolio'><Menu.Item name='portfolio' active={activeItem === 'portfolio'} onClick={this.handleItemClick} /></Link>
-            <Link to='/bio'><Menu.Item name='bio' active={activeItem === 'bio'} onClick={this.handleItemClick} /></Link>
-          </Menu>
+      <Grid columns={3} id='clue'>
+        <Router>
 
-          <Route exact path="/" component={Intro}/>
-          <Route path="/portfolio" component={Portfolio}/>
-          <Route path="/bio" component={Bio}/>
-          <Route path="/contact" component={Contact}/>
+            <Grid.Row >
+              <Grid.Column width={3}>
+                <Menu text vertical size='massive' inverted  className='nav1'>
+                  <Link to='/'><Menu.Item  active={activeItem === 'closest'} onClick={this.handleItemClick}>HOME</Menu.Item></Link>
+                  <Link to='/portfolio'><Menu.Item  active={activeItem === 'portfolio'} onClick={this.handleItemClick}>PORTFOLIO</Menu.Item></Link>
+                  <Link to='/bio'><Menu.Item  active={activeItem === 'bio'} onClick={this.handleItemClick}>BIO</Menu.Item></Link>
+                </Menu>
+              </Grid.Column>
 
-          <Footer />
-        </div>
-      </Router>
+              <Grid.Column width={10}>
+                <Route exact path="/" component={Intro}/>
+                <Route path="/portfolio" component={Portfolio}/>
+                <Route path="/bio" component={Bio}/>
+                <Route path="/contact" component={Contact}/>
+              </Grid.Column>
+            </Grid.Row>
+
+        </Router>
+      </Grid>
     )
   }
 }
