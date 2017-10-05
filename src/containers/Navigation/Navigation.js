@@ -1,6 +1,6 @@
 import React, {Component} from 'react'
 import {BrowserRouter as Router, Route, Link} from 'react-router-dom'
-import {Menu} from 'semantic-ui-react'
+import {List, Menu} from 'semantic-ui-react'
 import Intro from '../../components/Intro/Intro.js'
 import Portfolio from '../Portfolio/Portfolio.js'
 import Contact from '../Contact/Contact.js'
@@ -19,26 +19,10 @@ export default class Navigation extends Component {
     return (
       <Router>
         <div>
-          <Menu className='nav1' size='massive' stackable>
-            <Menu.Item>
-              <img className='logo' src={this.props.icon}/>
-            </Menu.Item>
-
-            <Link to="/"><Menu.Item name='home' active={activeItem === 'home'} onClick={this.handleItemClick}>
-              Home
-            </Menu.Item></Link>
-
-            <Link to="/portfolio"><Menu.Item name='portfolio' active={activeItem === 'portfolio'} onClick={this.handleItemClick}>
-              Portfolio
-            </Menu.Item></Link>
-
-            <Link to="/bio"><Menu.Item name='bio' active={activeItem === 'bio'} onClick={this.handleItemClick}>
-              Bio
-            </Menu.Item></Link>
-
-            <Link to="/contact"><Menu.Item name='contact' active={activeItem === 'contact'} onClick={this.handleItemClick}>
-              Contact
-            </Menu.Item></Link>
+          <Menu text vertical>
+            <Link to='/'><Menu.Item name='closest' active={activeItem === 'closest'} onClick={this.handleItemClick} /></Link>
+            <Link to='/portfolio'><Menu.Item name='portfolio' active={activeItem === 'portfolio'} onClick={this.handleItemClick} /></Link>
+            <Link to='/bio'><Menu.Item name='bio' active={activeItem === 'bio'} onClick={this.handleItemClick} /></Link>
           </Menu>
 
           <Route exact path="/" component={Intro}/>
