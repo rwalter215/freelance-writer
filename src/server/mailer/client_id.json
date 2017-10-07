@@ -1,0 +1,10 @@
+{
+  "web": {
+    "client_id": "840984266164-759nfp0dn3qmjep5f6iu1kv06br14pu2.apps.googleusercontent.com",
+    "project_id": "feisty-port-182021",
+    "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+    "token_uri": "https://accounts.google.com/o/oauth2/token",
+    "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+    "client_secret": "2iS_ssWwNkatVoBEbSlRaSzz"
+  }
+}

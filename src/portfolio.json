@@ -2,47 +2,47 @@
   "Portfolio": [
     {
       "header": "Anh Huong Tran",
-      "description": "Movie Director",
+      "description": "Oscar-Nominated Movie Director. During the press tour fo the adaptation of Haruki Murakami's novel Norwegian Wood.",
       "url": "",
       "category": "interview"
     },{
       "header": "Sadaharu Aoki",
-      "description": "Pâtissier",
+      "description": "Pâtissier of the year in 2011, Aoki revisits French classics with a Japanese taste.",
       "url": "",
       "category": "interview"
     },{
       "header": "Jay Park",
-      "description": "Kpop Singer",
+      "description": "Concerts, brand-new label, original style, the Korean-American singer tells all.",
       "url": "",
       "category": "interview"
     },{
       "header": "Mon amoureux Japonais",
-      "description": "Series",
+      "description": "Series - How to understand your foreign lover?  Follow our couple along the entries of this 4 seasons humor piece.",
       "url": "",
       "category": "s&f"
     },{
       "header": "Fast Fashion - La mode en avance rapide",
-      "description": "Feature",
+      "description": "Fashion Feature - When street styles became more important than catwalks.",
       "url": "",
       "category": "s&f"
     },{
-      "header": "J'ai testé... le Japanese Straight Perm",
-      "description": "Feature",
+      "header": "J'ai testé... le lissage japonais",
+      "description": "Beauty Feature - The Japanese Straight Perm put to the test.",
       "url": "",
       "category": "s&f"
     },{
-      "header": "Onsen",
-      "description": "Le tour des sources chaudes",
+      "header": "Onsen - Le tour des sources chaudes",
+      "description": "Japanese passion for hot springs explained in 12 amazing locations. Initially published in Japan LifeStyle.",
       "url": "",
       "category": "travel"
     },{
       "header": "Fous de France",
-      "description": "Nos maisons d'hôtes",
+      "description": "Feature on quirky and exceptional Bed&Breakfast / Maisons d'hôte in France. Initially published in Marie Claire Maison (France).",
       "url": "",
       "category": "travel"
     },{
       "header": "S'épanouir sur le Douro",
-      "description": "",
+      "description": "Review of the Aquapura Douro Valley Spa in Portugal. Initially published in Marie Claire Maison (France).",
       "url": "",
       "category": "travel"
     },{
@@ -56,23 +56,23 @@
       "url": "",
       "category": "blog"
     },{
-      "header": "Roger&Gallet",
-      "description": "Les cédrats de la côte des sirènes",
+      "header": "Roger&Gallet - Les cédrats de la côte des sirènes",
+      "description": "Initially published in Marie Claire Maison (France)",
       "url": "",
       "category": "advert"
     },{
       "header": "Kawaii!! Le livre 100% Japon",
-      "description": "",
+      "description": "La kawaïï mania n'aura plus de secrets pour vous ! Le livre pour toutes les filles que le Japon fascine. Ce livre 100% Japon décrypte tout ce qui participe à cette tendance en provenance du pays d’Hello Kitty et de Pikachu : Les recettes, la mode, la culture, l’Art de vivre ... Kawaii - Le livre 100% Japon Editeur : Larousse (octobre 2010) Relié (96 pages) ISBN : 2035846900",
       "url": "https://www.amazon.fr/dp/2035846900/ref=cm_sw_r_cp_tai_ggbXzbD2KPB0D",
       "category": "book"
     },{
       "header": "L'Evasion culinaire au Japon",
-      "description": "",
+      "description": "Voyage, art de vivre, cuisine... De la gastronomie japonaise, on connaît les incontournables sushis et les traditionnelles yakitori. Cet ouvrage vous présente un autre visage de la culture culinaire nippone en vous proposant des plats moins connus, mais toujours aussi riches en saveurs. L'Evasion culinaire au Japon marque la naissance de la collection Japan LifeStyle. Un premier livre pour une première aventure gourmande ! + 30 recettes L'Evasion culinaire au Japon Editeur : Factory Edition (mars 2013) Broché (66 pages) ISBN : 979-1090057500",
       "url": "https://www.amazon.fr/dp/B00AZ45WZE/ref=cm_sw_r_cp_tai_6cbXzbHHFVM4S",
       "category": "book"
     },{
       "header": "L'Evasion culinaire au Japon 2",
-      "description": "",
+      "description": "Voyage, art de vivre, cuisine... L’Évasion culinaire au Japon revient avec une suite ! Des produits de grande consommation aux desserts délicats, en passant par des plats populaires, notre voyage gastronomique à travers le Japon vous livrera nombre d'astuces et de conseils pour vous approprier ces saveurs uniques ! + 30 recettes L'Evasion culinaire au Japon 2 Editeur : Factory Edition (mars 2014) Broché (68 pages) ISBN : 979-1090118157",
       "url": "https://www.amazon.fr/dp/B00HLB074U/ref=cm_sw_r_cp_tai_jebXzbR2F1MHJ",
       "category": "book"
     }
