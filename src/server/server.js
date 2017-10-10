@@ -1,7 +1,10 @@
-import 'babel-polyfill'
-import express from 'express'
-import bodyParser from 'body-parser'
-import sgMail from '@sendgrid/mail';
+// import 'babel-polyfill'
+// import express from 'express'
+// import bodyParser from 'body-parser'
+// import sgMail from '@sendgrid/mail'
+var express = require('express')
+var bodyParser = require('body-parser')
+var sgMail = require('@sendgrid/mail')
 
 const app = express()
 app.use(bodyParser.json());
