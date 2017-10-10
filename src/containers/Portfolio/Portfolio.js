@@ -1,6 +1,6 @@
 import React, {Component} from 'react'
 import {BrowserRouter as Router, Route, Link} from 'react-router-dom'
-import {Header, List} from 'semantic-ui-react'
+import {Header, List, Grid} from 'semantic-ui-react'
 import style from './Portfolio.css'
 import PortfolioSection from '../../components/PortfolioSection/PortfolioSection.js'
 import data from '../../portfolio.json'
@@ -35,14 +35,23 @@ export default class Portfolio extends Component {
   render() {
 
     return (
-      <List size='big' as='ol'>
-        <List.Item>
-          <List.Content>
-            <Header size='huge' className='page__title'>Portfolio</Header>
-            <List.List as='ol' children={this.portfolioItems}></List.List>
-          </List.Content>
-        </List.Item>
-      </List>
+      <Grid>
+        <Grid.Row>
+          <Grid.Column width={3}>
+          </Grid.Column>
+
+          <Grid.Column width={10}>
+            <List size='big' as='ol'>
+              <List.Item>
+                <List.Content>
+                  <Header size='huge' className='page__title'>Portfolio</Header>
+                  <List.List as='ol' children={this.portfolioItems}></List.List>
+                </List.Content>
+              </List.Item>
+            </List>
+          </Grid.Column>
+        </Grid.Row>
+      </Grid>
     )
   }
 }

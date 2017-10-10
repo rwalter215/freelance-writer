@@ -1,3 +1,7 @@
 .nav1 {
   background-color: #2bca9e !important;
 }
+
+.ui.menu {
+  margin-bottom: 4rem !important;
+}

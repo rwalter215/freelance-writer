@@ -19,9 +19,9 @@ export default class Navigation extends Component {
     return (
       <Router>
         <div>
-          <Menu className='nav1' size='massive' inverted stackable>
+          <Menu className='nav1' size='massive' stackable>
             <Menu.Item>
-              <img src='/logo.png'/>
+              <img className='logo' src={this.props.icon}/>
             </Menu.Item>
 
             <Link to="/"><Menu.Item name='home' active={activeItem === 'home'} onClick={this.handleItemClick}>
