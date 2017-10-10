@@ -37,7 +37,7 @@ app.post('/contact', (req, res) => {
 const PORT = process.env.PORT || 4000;
 
 if (process.env.NODE_ENV === 'production') {
-  app.use(express.static('../../build'));
+  app.use(express.static('build'));
 }
 
 app.listen(PORT, () => {
