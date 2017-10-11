@@ -1,18 +1,21 @@
-# Use node 6.11.4 LTS
+# Dockerfile
 FROM node:6.11.4
-ENV LAST_UPDATED 20160605T165400
 
-# Copy source code
-COPY . /carla
+# Create app directory
+RUN mkdir -p /usr/src/app
+WORKDIR /usr/src/app
 
-# Change working directory
-WORKDIR /carla
-
-# Install dependencies
+# Install app dependencies
+COPY package.json /usr/src/app/
 RUN npm install
 
-# Expose API port to the outside
-EXPOSE 80
+# Bundle app source
+COPY . /usr/src/app
 
-# Launch application
-CMD ["npm","run", "client"]
+# Build and optimize react app
+RUN npm run build
+
+EXPOSE 4000
+
+# defined in package.json
+CMD [ "npm", "run", "server" ]
