@@ -35,8 +35,7 @@ app.post('/contact', (req, res) => {
       res.status(400).send(err)
     });
   } else {
-    console.log("Someone has been a bad boy")
-    res.status(200).send()
+    res.status(200).send("Someone has been a bad boy")
   }
 })
 
