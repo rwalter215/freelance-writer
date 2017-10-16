@@ -1,29 +1,10 @@
-.circular--portrait {
+.logo {
   position: relative;
   width: 400px;
   height: 400px;
-  overflow: hidden;
-  border-radius: 50%;
 }
 
-.circular--portrait img {
+.logo img {
   width: 100%;
   height: auto;
-}
-
-.intro__divider {
-  font-family: 'Cinzel', serif;
-  font-size: 60px;
-}
-
-.intro__header {
-  font-family: 'Cinzel', serif;
-  font-size: 80px;
-  margin: 0 auto;
-}
-
-.intro__sub-description {
-  font-family: 'Cinzel', serif;
-  font-size: 30px;
-  display: inline;
 }

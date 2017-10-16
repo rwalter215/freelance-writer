@@ -20,20 +20,24 @@ export default class Navigation extends Component {
       <Grid columns={3} id='clue'>
         <Router>
 
-            <Grid.Row >
+            <Grid.Row centered>
               <Grid.Column width={3}>
                 <Menu text vertical size='massive' inverted  className='nav1'>
                   <Link to='/'><Menu.Item  active={activeItem === 'closest'} onClick={this.handleItemClick}>HOME</Menu.Item></Link>
                   <Link to='/portfolio'><Menu.Item  active={activeItem === 'portfolio'} onClick={this.handleItemClick}>PORTFOLIO</Menu.Item></Link>
                   <Link to='/bio'><Menu.Item  active={activeItem === 'bio'} onClick={this.handleItemClick}>BIO</Menu.Item></Link>
+                  <Link to='/contact'><Menu.Item  active={activeItem === 'contact'} onClick={this.handleItemClick}>CONTACT</Menu.Item></Link>
                 </Menu>
               </Grid.Column>
 
-              <Grid.Column width={10}>
+              <Grid.Column width={10} verticalAlign='middle'>
                 <Route exact path="/" component={Intro}/>
                 <Route path="/portfolio" component={Portfolio}/>
                 <Route path="/bio" component={Bio}/>
                 <Route path="/contact" component={Contact}/>
+              </Grid.Column>
+
+              <Grid.Column width={3}>
               </Grid.Column>
             </Grid.Row>
 
