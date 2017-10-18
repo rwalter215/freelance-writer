@@ -1,7 +1,12 @@
 .form {
-  background-color: #2bca9e !important;
+    /*background-color: #2bca9e !important;*/
+    background-color: rgba(0, 0, 0, 0) !important
 }
 
 .button--submit {
   margin-top: 1rem !important;
+}
+
+.test {
+  display: none;
 }
