@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import {Grid, Image, Header, Container} from 'semantic-ui-react'
-import style from './Bio.css'
-import bio from '../../bio.txt'
+import './Bio.css'
+// import bio from '../../bio.txt'
 
 export default class Bio extends Component {
   state = {}

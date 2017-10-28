@@ -1,7 +1,6 @@
 import React, {Component} from 'react'
-import {BrowserRouter as Router, Route, Link} from 'react-router-dom'
 import {Header, List, Grid} from 'semantic-ui-react'
-import style from './Portfolio.css'
+import './Portfolio.css'
 import PortfolioSection from '../../components/PortfolioSection/PortfolioSection.js'
 import data from '../../portfolio.json'
 

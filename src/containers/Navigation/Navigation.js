@@ -1,12 +1,11 @@
 import React, {Component} from 'react'
 import {BrowserRouter as Router, Route, Link} from 'react-router-dom'
-import {List, Menu, Grid} from 'semantic-ui-react'
+import { Menu, Grid} from 'semantic-ui-react'
 import Intro from '../../components/Intro/Intro.js'
 import Portfolio from '../Portfolio/Portfolio.js'
 import Contact from '../Contact/Contact.js'
 import Bio from '../../components/Bio/Bio.js'
-import Footer from '../../components/Footer/Footer.js'
-import style from './Navigation.css'
+import './Navigation.css'
 
 export default class Navigation extends Component {
   state = {}

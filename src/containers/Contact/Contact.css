@@ -10,3 +10,7 @@
 .test {
   display: none;
 }
+
+.page_header {
+  color: white !important;
+}
