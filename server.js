@@ -1,7 +1,3 @@
-// import 'babel-polyfill'
-// import express from 'express'
-// import bodyParser from 'body-parser'
-// import sgMail from '@sendgrid/mail'
 var express = require('express')
 var bodyParser = require('body-parser')
 var sgMail = require('@sendgrid/mail')
@@ -30,7 +26,8 @@ app.post('/contact', (req, res) => {
   if(test.length === 0) {
     sgMail.send(msg)
     .then(resp => {
-      res.status(201).send(resp)
+      console.log('in the .then')
+      res.send(resp)
     }).catch(err => {
       res.status(400).send(err)
     });

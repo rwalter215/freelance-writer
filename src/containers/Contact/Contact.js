@@ -37,8 +37,8 @@ export default class Contact extends Component {
         'Content-Type': 'application/json'
       },
       body: JSON.stringify({test: this.state.email, email: this.state.emailAddress, name: this.state.name, subject: this.state.emailSubject, message: this.state.emailContent})
-    }).then(this, response => {
-      console.log(response);
+    }).then(response => {
+      console.log('we are bsck in react', response);
       this.setState({loading: false, submitted: 'Successful'})
     }).catch(error => {
       console.error(error);
@@ -58,15 +58,17 @@ export default class Contact extends Component {
 
   handleSuccess = () => {
     if(this.state.submitted === "Successful") {
-      return <Message
+      return (
+        <Message
               success
               header='Form Submitted'
-              content="You have contacted Carla!"/>
+              content="You have contacted Carla!" />
+            )
     } else if(this.state.success === "Unsuccessful") {
-      return <Message
+      return (<Message
               error
               header='Sorry, there was an error'
-              content='Please refresh the page and try again, or contact me on social media.' />
+              content='Please refresh the page and try again, or contact me on social media.' />)
     }
   }
 
