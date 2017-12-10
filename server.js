@@ -27,10 +27,9 @@ app.post('/contact', (req, res) => {
   if(test.length === 0) {
     sgMail.send(msg)
     .then(resp => {
-      console.log("we are hitting it: server .then")
-      res.status(201).send(resp)
+      res.send(resp)
     }).catch(err => {
-      res.status(400).send(err)
+      res.send(err)
     });
   } else {
     res.status(200).send("Someone has been a bad boy")
