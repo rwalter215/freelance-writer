@@ -1,14 +1,17 @@
-.ui.menu {
+/* .ui.menu {
   margin-bottom: 4rem !important;
-}
+} */
 
 #clue {
-  background: no-repeat center/100% url("background1.jpg");
-  height: 100vh;
+  min-height: 100%;
 }
 
 .nav1 {
   font-size: 2rem !important;
   padding-left: 2rem;
   padding-top: 2rem;
+}
+
+#root {
+  height: 100%;
 }
