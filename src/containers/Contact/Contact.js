@@ -36,10 +36,8 @@ export default class Contact extends Component {
         subject: this.state.emailSubject,
         message: this.state.emailContent
     }).then(response => {
-      console.log("we are hitting it: react ", response);
       this.setState({loading: false, submitted: 'Successful'})
     }).catch(error => {
-      console.error("we are hitting it: react ", error);
       this.setState({loading: false, submitted: 'Unsuccessful'})
     });
     this.setState({name: '', emailAddress: '', emailSubject: '', emailContent: ''})
