@@ -1,7 +1,6 @@
 import React, {Component} from 'react'
-import {BrowserRouter as Router, Route, Link} from 'react-router-dom'
-import {Header, List} from 'semantic-ui-react'
-import style from './PortfolioSection.css'
+import { List } from 'semantic-ui-react'
+import './PortfolioSection.css'
 
 export default class Portfolio extends Component {
   state = {}
