@@ -9,16 +9,17 @@ app.use(bodyParser.urlencoded({ extended: true }));
 
 
 app.use(express.static(path.resolve(__dirname, 'build')));
+
 app.get('*', (req, res) => {
   res.sendFile(express.static(path.resolve(__dirname, 'build', index.html)))
 })
 
-sgMail.setApiKey(process.env.SENDGRID_API_KEY);
+sgMail.setApiKey(process.env.ORCA_EMAIL_KEY);
 
 app.post('/contact', (req, res) => {
   const { email = '', name = '', message = '', subject='', test='' } = req.body
   const msg = {
-    to: 'carlacpro@gmail.com',
+    to: 'r.walter215@gmail.com',
     from: email,
     subject: subject,
     text: message,
@@ -26,10 +27,9 @@ app.post('/contact', (req, res) => {
   if(test.length === 0) {
     sgMail.send(msg)
     .then(resp => {
-      console.log('in the .then')
       res.send(resp)
     }).catch(err => {
-      res.status(400).send(err)
+      res.send(err)
     });
   } else {
     res.status(200).send("Someone has been a bad boy")

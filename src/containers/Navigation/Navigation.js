@@ -1,12 +1,11 @@
 import React, {Component} from 'react'
 import {BrowserRouter as Router, Route, Link} from 'react-router-dom'
-import {Menu} from 'semantic-ui-react'
+import { Menu, Grid, Sticky} from 'semantic-ui-react'
 import Intro from '../../components/Intro/Intro.js'
 import Portfolio from '../Portfolio/Portfolio.js'
 import Contact from '../Contact/Contact.js'
 import Bio from '../../components/Bio/Bio.js'
-import Footer from '../../components/Footer/Footer.js'
-import style from './Navigation.css'
+import './Navigation.css'
 
 export default class Navigation extends Component {
   state = {}
@@ -17,38 +16,34 @@ export default class Navigation extends Component {
     const {activeItem} = this.state
 
     return (
-      <Router>
-        <div>
-          <Menu className='nav1' size='massive' stackable>
-            <Menu.Item>
-              <img className='logo' src={this.props.icon}/>
-            </Menu.Item>
+      <Grid columns={3} id='clue'>
+        <Router>
 
-            <Link to="/"><Menu.Item name='home' active={activeItem === 'home'} onClick={this.handleItemClick}>
-              Home
-            </Menu.Item></Link>
+            <Grid.Row centered>
+              <Grid.Column width={3}>
+                <Sticky>
+                <Menu text vertical size='massive' inverted  className='nav1'>
+                  <Link to='/'><Menu.Item  active={activeItem === 'closest'} onClick={this.handleItemClick}>home</Menu.Item></Link>
+                  {/* <Link to='/portfolio'><Menu.Item  active={activeItem === 'portfolio'} onClick={this.handleItemClick}>portfolio</Menu.Item></Link> */}
+                  <Link to='/bio'><Menu.Item  active={activeItem === 'bio'} onClick={this.handleItemClick}>about us</Menu.Item></Link>
+                  <Link to='/contact'><Menu.Item  active={activeItem === 'contact'} onClick={this.handleItemClick}>contact</Menu.Item></Link>
+                </Menu>
+                </Sticky>
+              </Grid.Column>
 
-            <Link to="/portfolio"><Menu.Item name='portfolio' active={activeItem === 'portfolio'} onClick={this.handleItemClick}>
-              Portfolio
-            </Menu.Item></Link>
+              <Grid.Column width={10} textAlign='middle'>
+                <Route exact path="/" component={Intro}/>
+                {/* <Route path="/portfolio" component={Portfolio}/> */}
+                <Route path="/bio" component={Bio}/>
+                <Route path="/contact" component={Contact}/>
+              </Grid.Column>
 
-            <Link to="/bio"><Menu.Item name='bio' active={activeItem === 'bio'} onClick={this.handleItemClick}>
-              Bio
-            </Menu.Item></Link>
+              <Grid.Column width={3}>
+              </Grid.Column>
+            </Grid.Row>
 
-            <Link to="/contact"><Menu.Item name='contact' active={activeItem === 'contact'} onClick={this.handleItemClick}>
-              Contact
-            </Menu.Item></Link>
-          </Menu>
-
-          <Route exact path="/" component={Intro}/>
-          <Route path="/portfolio" component={Portfolio}/>
-          <Route path="/bio" component={Bio}/>
-          <Route path="/contact" component={Contact}/>
-
-          <Footer />
-        </div>
-      </Router>
+        </Router>
+      </Grid>
     )
   }
 }

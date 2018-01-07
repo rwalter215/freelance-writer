@@ -1,7 +1,6 @@
 import React, {Component} from 'react'
-import {BrowserRouter as Router, Route, Link} from 'react-router-dom'
 import {Header, List, Grid} from 'semantic-ui-react'
-import style from './Portfolio.css'
+import './Portfolio.css'
 import PortfolioSection from '../../components/PortfolioSection/PortfolioSection.js'
 import data from '../../portfolio.json'
 
@@ -33,14 +32,8 @@ export default class Portfolio extends Component {
   }
 
   render() {
-
     return (
-      <Grid>
-        <Grid.Row>
-          <Grid.Column width={3}>
-          </Grid.Column>
-
-          <Grid.Column width={10}>
+          <Grid.Row>
             <List size='big' as='ol'>
               <List.Item>
                 <List.Content>
@@ -49,9 +42,7 @@ export default class Portfolio extends Component {
                 </List.Content>
               </List.Item>
             </List>
-          </Grid.Column>
-        </Grid.Row>
-      </Grid>
+          </Grid.Row>
     )
   }
 }

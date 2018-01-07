@@ -1,5 +1,6 @@
 .form {
-  background-color: #2bca9e !important;
+    /*background-color: #2bca9e !important;*/
+    background-color: rgba(0, 0, 0, 0) !important
 }
 
 .button--submit {
@@ -8,4 +9,8 @@
 
 .test {
   display: none;
+}
+
+.page_header {
+  color: white !important;
 }
