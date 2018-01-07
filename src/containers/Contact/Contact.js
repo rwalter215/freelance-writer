@@ -1,5 +1,4 @@
 import React, {Component} from 'react';
-//import 'whatwg-fetch';
 import axios from 'axios'
 import {
   Grid,
@@ -12,7 +11,6 @@ import {
   Dimmer,
   Message
 } from 'semantic-ui-react';
-import './Contact.css'
 
 export default class Contact extends Component {
   state = {
@@ -67,28 +65,30 @@ export default class Contact extends Component {
   }
 
   render() {
-    const {name, email, emailAddress, emailSubject, emailContent} = this.state;
 
     return (
+      <Grid>
         <Grid.Row>
-            {this.handleLoader()}
-            <Header size='huge' className='page_header' >contact us</Header>
+          <Grid.Column width={3}>
+          </Grid.Column>
+
+          <Grid.Column width={10}>
+            <Header size='huge'>Contact Me</Header>
             <Segment className='form' inverted>
-              <Form onSubmit={this.handleSubmit} >
+              <Form inverted>
                 <Form.Group widths='equal'>
-                  <Form.Input required  placeholder='Name' name='name' value={name} onChange={this.handleChange}/>
-                  <Form.Input  className='test' placeholder='Email' name='email' value={email} onChange={this.handleChange}/>
-                  <Form.Input required placeholder='Email' name='emailAddress' type='email' value={emailAddress} onChange={this.handleChange}/>
+                  <Form.Input label='Name' placeholder='Name' />
+                  <Form.Input label='Subject' placeholder='Subject' />
                 </Form.Group>
-                <Form.Input  placeholder='Subject' name='emailSubject' value={emailSubject} onChange={this.handleChange}/>
-                <TextArea required autoHeight placeholder='What can we do for you?' name='emailContent' value={emailContent} onChange={this.handleChange} style={{
-                  minHeight: 200
-                }}/>
-                {this.handleSuccess()}
-                <Button className='button--submit' floated='left' type='submit'>Submit</Button>
+                <TextArea autoHeight placeholder='What can I do for you?' style={{ minHeight: 100 }} />
+                <Button className='button--submit' type='submit'>Submit</Button>
               </Form>
             </Segment>
+          </Grid.Column>
+
         </Grid.Row>
+
+      </Grid>
     )
   }
 }

@@ -1,0 +1,10 @@
+version: "3"
+
+services:
+  web:
+    build: .
+    command: npm run server 
+    volumes:
+      - .:/carla
+    ports:
+      - "4000:4000"

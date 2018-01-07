@@ -15,11 +15,11 @@ export default class Footer extends Component {
           </Grid.Column>
           <Grid.Column>
             <Segment color='black' inverted>
-              <a href="https://www.facebook.com/carla.c.pro" className='fa fa-linkedin'></a>
-              <a href="https://www.facebook.com/carla.c.pro" className='fa fa-instagram'></a>
-              <a href="https://www.facebook.com/carla.c.pro" className='fa fa-twitter'></a>
-              <a href="https://www.facebook.com/carla.c.pro" className='fa fa-pinterest'></a>
-              <a href="https://www.facebook.com/carla.c.pro" className='fa fa-facebook'></a>
+              <a href="https://www.linkedin.com/in/carla-cino-028432110/" className='fa fa-linkedin' target='_blank'></a>
+              <a href="https://www.instagram.com/carlacpro/" className='fa fa-instagram' target='_blank'></a>
+              <a href="https://twitter.com/carlacpro" className='fa fa-twitter' target='_blank'></a>
+              <a href="https://www.pinterest.com/carlacpro/" className='fa fa-pinterest' target='_blank'></a>
+              <a href="https://www.facebook.com/carla.c.pro" className='fa fa-facebook' target='_blank'></a>
             </Segment>
           </Grid.Column>
           <Grid.Column>
