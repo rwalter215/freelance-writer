@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
-import { Menu } from 'semantic-ui-react';
+import { Menu, Sticky } from 'semantic-ui-react';
 import Intro from '../../components/Intro/Intro.js';
 import Portfolio from '../Portfolio/Portfolio.js';
 import Contact from '../Contact/Contact.js';
@@ -18,7 +18,7 @@ export default class Navigation extends Component {
 
     return (
       <Router>
-        <div>
+        <div className="App">
           <Menu className="nav1" size="massive" stackable>
             <Menu.Item>
               <img className="logo" src={this.props.icon} alt="not today" />
