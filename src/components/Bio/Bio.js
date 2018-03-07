@@ -1,6 +1,5 @@
 import React from 'react';
 import { Grid, Image, Header, Container } from 'semantic-ui-react';
-import photo from './carla2.jpg';
 import './Bio.css';
 
 const Bio = () => (
@@ -11,7 +10,12 @@ const Bio = () => (
       <Grid.Column width={10}>
         <Container text>
           <Header as="h2">About Me</Header>
-          <Image src={photo} size="medium" shape="rounded" floated="left" />
+          <Image
+            src={'carla2.jpg'}
+            size="medium"
+            shape="rounded"
+            floated="left"
+          />
           <p>
             Professional freelance writer with a degree in Journalism and
             Communication from Paris 3 - Sorbonne Nouvelle University, I’ve been
